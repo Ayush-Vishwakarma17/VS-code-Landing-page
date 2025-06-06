@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+.links{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(156, 164, 181);
+    font-size: 20px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.one {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.searchbar {
+    padding-left: 52px;
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 23px;
+    height: 43px;
+    width: 100%;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgb(28,28,28);
+    border-radius: 5px;
+}
+.searchbar:hover {
+  border-color: rgb(120, 170, 255);
+}
+.searchbar {
+    transition: .2 ease;
+}
+.searchbar::placeholder {
+    font-size: 18px;
+    opacity: .7;
+    color: #ccc;
+}
+.searchbar:focus {
+    outline: none; /* removes default blue shadow */
+    border: 1px solid rgb(75, 142, 251); /* cyan blue */
+    
+}
+.two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 490px;
+}
+.searchbox {
+    position: relative;
+    width: 57%;
+}
+.searchicon {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    opacity: 0.9;
+    top: 12px;
+    left: 18px;
+    pointer-events: none;
+}
+.smallheading{
+    font-size: 100px;
+    padding-left: 24px;
+}
+.invisiblepara{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.invisiblepara:hover{
+    opacity: 1;
+}
+#playbutton {
+    border: solid 4px transparent;
+    transition: border 0.3s ease-in-out;
+}
+#playbutton:hover{
+    border: solid 4px  rgb(156, 164, 181);
+}
+
